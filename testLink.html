@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>test linkMap</title>
+	<script type="text/javascript" src="csLinkMap2.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var a = new LinkMap();
+console.log(a.push('guan', 'name4'));
+console.log(a.push('kai', 'name2'));
+console.log(a.push('she', 'name1'));
+console.log(a.push('2009', 'name8'));
+console.log('length : ', a.length);
+console.log('pop : ', a.pop());
+console.log('get(0) : ', a.get(0));
+console.log('------------------each');
+a.each(function (item, key, index) {
+	console.log(item, key, index);
+});
+console.log('------------------each');
+console.log('toString : ', a.toString() );
+console.log('toArray : ', a.array() );
+console.log('toMap : ', a.object() );
+console.log('insert before 2 : ', a.insert(2, {value : 123}, a.insertPlace.BEFORE));
+console.log('toString : ', a.toString() );
+console.log('insert after 2 : ', a.insert(2, {value : 321}, a.insertPlace.AFTER));
+console.log('toString : ', a.toString() );
+console.log('insert before 0 : ', a.insert(0, {value : 111}, a.insertPlace.BEFORE));
+console.log('toString : ', a.toString() );
+</script>
+</body>
+</html>
