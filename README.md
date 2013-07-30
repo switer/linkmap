@@ -1,4 +1,4 @@
-CS_LinkMap
+linkmap
 ===========
 
   A Javascript Data Structure 
