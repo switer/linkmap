@@ -1,4 +1,4 @@
 linkmap
 ===========
 
-  A Javascript Data Structure 
+A  javascript DataStructure lib, link map, like linear-list.
